@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario para la uni</title>
+</head>
+<body>
+    
+    <fieldset style="width: fit-content;">
+        <legend>Solicitud de ingreso a la Uni</legend>
+        <form action="Respuestas.php" method="POST">
+            <label>Nombre:
+                <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+            </label>
+            <br><br>
+            <label>Apellido paterno:
+                <input type="text" name="apellidoP" placeholder="Apellido Paterno">
+            </label>
+            <br><br>
+            <label>Apellido materno
+                <input type="text" name="apellidoM" placeholder="Apellido Materno">
+            </label>
+            <br><br>
+            <label>Sexo:
+                <select name="sexo">
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                </select>
+            </label>
+            <br><br>
+            <label>Edad:
+                <input type="number" name="edad" min="16" max="99">
+            </label>
+            <br><br>
+            <label>Correo Electronico:
+                <input type="email" name="correo" placeholder="ejemplo@dominio.com">
+            </label>
+            <br><br>
+            <label>Telefono
+                <input type="number" name="tel">
+            </label>
+            <br><br>
+            <label>Celular
+                <input type="number" name="cel" >
+            </label>
+            <br><br>
+            <label>Escuela de procedencia: <br>
+                <select name="escuela">
+                    <option value="Ecuela Nacional Preparatoria">Escuela Nacional Preparatoria</option>
+                    <option value="Colegio de Ciencias y Humanidades">Colegio de Ciencias y Humanidades</option>
+                </select>
+            </label>
+            <br><br>
+            <label>Promedio:
+                <input type="number" name="promedio" min="5" max="10">
+            </label>
+            <br><br>
+            <label>Primera opción
+                <input type="text" name="primeraOp">
+            </label>
+            <br><br>
+            <label>Segunda opción
+                <input type="text" name="segundaOp">
+            </label>
+            <br><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+        </form>
+    </fieldset>
+</body>
+</html>
