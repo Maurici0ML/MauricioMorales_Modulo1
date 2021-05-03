@@ -91,7 +91,7 @@
             }
 
             //Condicion que nos indica que debemos introducir un mensaje con caracteres morse.
-            elseif(stripos($texto, "a") || stripos($texto, "e") || stripos($texto, "i") || stripos($texto, "o") || stripos($texto, "u") || stripos($texto, "y"))
+            elseif(stripos($texto, "a") || stripos($texto, "e") || stripos($texto, "i") || stripos($texto, "o") || stripos($texto, "u") || stripos($texto, "y") || stripos($texto, "1") || stripos($texto, "2") || stripos($texto, "3") || stripos($texto, "4") || stripos($texto, "5") || stripos($texto, "6") || stripos($texto, "7") || stripos($texto, "8") || stripos($texto, "9") || stripos($texto, "0"))
                 echo "Ha escrito de forma incorrecta su texto en español o incluido un caracter no correspondiente a este ('.','-'). Por favor corrija su texto.";
             break;
     }    
