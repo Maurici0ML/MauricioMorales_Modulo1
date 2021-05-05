@@ -126,7 +126,7 @@
                 <thead>
                     <tr>
                         <th>Cumpleaños</th>
-                        <th>'.$fechaCump[0].'-'.$fechaCump[1].'-'.$fechaCump[0].'</th>
+                        <th>'.$fechaCump[2].'-'.$fechaCump[1].'-'.$fechaCump[0].'</th>
                     </tr>
                 </thead>';
         
