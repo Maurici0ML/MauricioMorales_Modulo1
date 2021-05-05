@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación 2 en 1</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <fieldset style="width: fit-content;">
+                    <legend>Reloj Mundial</legend>
+                    <form action="Actividad14.php" method="POST">
+                        <label>Ingrese la hora(CDMX)
+                            <input type="time" name="hora" required>
+                        </label>
+                        <br>
+                        <p>Elige los paises que quieres consultar</p>
+                        <table>
+                            <tr>
+                                <td>Nueva York:</td>
+                                <td><input type="checkbox" name="nuevaY"></td>
+                                <td>Sao Paulo:</td>
+                                <td><input type="checkbox" name="saoP"></td>
+                            </tr>
+                            <tr>
+                                <td>Madrid:</td>
+                                <td><input type="checkbox" name="madrid"></td>
+                                <td>Paris:</td>
+                                <td><input type="checkbox" name="paris"></td>
+                            </tr>
+                            <tr>
+                                <td>Roma:</td>
+                                <td><input type="checkbox" name="roma"></td>
+                                <td>Atenas:</td>
+                                <td><input type="checkbox" name="atenas"></td>
+                            </tr>
+                            <tr>
+                                <td>Beijin:</td>
+                                <td><input type="checkbox" name="beijin"></td>
+                                <td>Tokio:</td>
+                                <td><input type="checkbox" name="tokio"></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <input type="submit" value="Consultar">
+                        <input type="hidden" name="app" value="reloj">
+                    </form>
+                </fieldset>
+            </td>
+            <td>
+                <fieldset style="width: fit-content;">
+                    <legend>Calculo cumpleaños</legend>
+                    <form action="Actividad14.php" method="POST">
+                        <label>Ingrese su fecha de nacimiento
+                            <input type="date" name="fecha" required>
+                        </label>
+                        <br>
+                        <p>¿Qué quieres consultar?</p>
+                        <table>
+                            <tr>
+                                <td>Días para próximo cumpleaños</td>
+                                <td><input type="checkbox" name="dias"></td>
+                            </tr>
+                            <tr>
+                                <td>Horas para próximo cumpleaños</td>
+                                <td><input type="checkbox" name="horas"></td>
+                            </tr>
+                            <tr>
+                                <td>Minutos para próximo cumpleaños</td>
+                                <td><input type="checkbox" name="minutos"></td>
+                            </tr>
+                            <tr>
+                                <td>¿Será en fin de semana?</td>
+                                <td><input type="checkbox" name="finde"></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <input type="submit" value="Calcular">
+                        <input type="hidden" name="app" value="cumpleaños">
+                    </form>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
