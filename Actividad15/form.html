@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="width: fit-content;">
+        <legend>Registro nueva obra</legend>
+        <form action="./galeria.php" method="POST" enctype="multipart/form-data">
+            <label>Ingresa el nombre de la obra:
+                <input type="text" name="nomObra" required>
+            </label>
+            <br><br>
+            <label>Ingresa el nombre del autor:
+                <input type="text" name="autor">
+            </label>
+            <br><br>
+            <label>Ingresa el año en el cual se realizo la obra:
+                <input type="number" name="fecha" >
+            </label>
+            <br><br>
+            <label>Ingrese su archivo:
+                <input type="file" name="archivo" required>
+            </label>
+            <br><br>
+            <input type="submit" value="Subir obra">
+        </form>
+    </fieldset>
+</body>
+</html>
